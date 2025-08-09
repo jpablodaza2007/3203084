@@ -1,5 +1,5 @@
 print("Operadores de Asignación")
-num = 10
+num = 11
 num += 2
 print("Después de += 2:", num)   
 num -= 4
