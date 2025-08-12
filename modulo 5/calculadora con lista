@@ -1,0 +1,37 @@
+# Calculadora usando listas
+
+print("=== Calculadora con Listas ===")
+
+# Lista para guardar números y la operación
+datos = []
+
+# Pedir los números
+num1 = float(input("Ingresa el primer número: "))
+num2 = float(input("Ingresa el segundo número: "))
+
+# Guardar en la lista
+datos.append(num1)
+datos.append(num2)
+
+# Lista de operaciones disponibles
+operaciones = ["suma", "resta", "multiplicacion", "division"]
+
+print("\nOperaciones disponibles:", operaciones)
+op = input("Escribe la operación que deseas realizar: ").lower()
+
+# Calcular según la operación usando if y else
+if op == "suma":
+    resultado = datos[0] + datos[1]
+elif op == "resta":
+    resultado = datos[0] - datos[1]
+elif op == "multiplicacion":
+    resultado = datos[0] * datos[1]
+elif op == "division":
+    if datos[1] != 0:
+        resultado = datos[0] / datos[1]
+    else:
+        resultado = "Error: No se puede dividir entre cero"
+else:
+    resultado = "Operación no válida"
+
+print("Resultado:", resultado)
