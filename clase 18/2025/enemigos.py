@@ -11,3 +11,5 @@ class enemigo:
 
     def esta_vivo(self):
         return self.vida > 0
+    
+enemigo1 = enemigo
